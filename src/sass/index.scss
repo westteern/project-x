@@ -1,2 +1,19 @@
-@import './common';
-@import './example';
+@import './base/normalize';
+@import './base/vars';
+@import './base/common';
+
+@import './utils/mixins';
+@import './utils/reset';
+@import './utils/hidden';
+
+@import './component/container';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
