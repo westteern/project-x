@@ -32,6 +32,9 @@
 .social-list__item {
   width: 32px;
   height: 32px;
+
+  border-radius: 50px;
+  background-color: #fea5bb;
 }
 .social-link {
   display: flex;
@@ -41,6 +44,5 @@
   width: 100%;
   height: 100%;
 
-  background-color: #fea5bb;
   fill: var(--white-color);
 }
