@@ -1,0 +1,68 @@
+.customer-reviews {
+
+  &__box {
+    position: relative;
+    background-color: #FAFAFA;
+    padding: 43px 50px 17px 50px;
+    height: 250px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    max-width: 130px;
+    max-height: 239px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__adress {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    line-height: 186%;
+  }
+
+  &__point {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+ 
+  &__photo {
+    margin: 0 auto 32px auto;
+    display: block;
+  }
+
+  &__image {
+    position: absolute;
+    top: 30px;
+    left: 53px;
+  }
+
+  &__imageBackground {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 74px;
+  }
+
+
+  &__point-small:not(:last-child) {
+      margin-right: 10px;
+  }
+  
+  &__home-point {
+      display: flex;
+      justify-content: center;
+  }
+  
+  &__point-big:not(:last-child) {
+      margin-right: 18px;
+  }
+
+}
