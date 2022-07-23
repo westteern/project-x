@@ -16,5 +16,21 @@ ul {
 
 img {
   display: block;
+  width: 100%; /* Recomanded */
+  max-width: 100%;
+  height: auto; /* Recomanded */
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button {
+  cursor: pointer;
   max-width: 100%;
 }
