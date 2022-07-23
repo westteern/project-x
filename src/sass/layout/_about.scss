@@ -66,6 +66,7 @@
   background: var(--white-color);
   cursor: pointer;
   border-radius: 22px;
+  padding-top: 0;
   padding-left: 37px;
   padding-right: 37px;
   border: 1px solid transparent;
@@ -74,15 +75,6 @@
   justify-content: center;
 }
 
-.text-btn {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
 .about-button-icon {
-  margin-left: 14px;
   fill: var(--accent-color);
-  align-items: center;
-  stroke: 2;
 }
