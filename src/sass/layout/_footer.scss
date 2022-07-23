@@ -5,6 +5,11 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
+  @include tablet {
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .footer__title {
   width: 234px;
@@ -12,6 +17,11 @@
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 40px;
+  @include tablet {
+    width: 340px;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
 }
 .footer__title--small {
   margin-bottom: 16px;
@@ -23,6 +33,12 @@
   text-transform: uppercase;
 
   color: var(--pre-title-color);
+  @include tablet {
+    margin-bottom: 12px;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+  }
 }
 .footer__title--big {
   font-family: 'Titan One';
@@ -33,6 +49,11 @@
   text-transform: uppercase;
 
   color: var(--title-color);
+  @include tablet {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+  }
 }
 .footer__cotacts {
   padding-bottom: 40px;
@@ -43,6 +64,9 @@
   gap: 28px;
 
   margin-bottom: 40px;
+  @include tablet {
+    padding-top: 60px;
+  }
 }
 .social-list__item {
   width: 32px;
@@ -74,12 +98,19 @@
   line-height: 1.8;
 
   text-align: right;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.9;
+  }
 }
 
 .call__text {
   color: var(--primary-text-color);
 }
 .call__number {
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: var(--title-color);
   text-decoration: none;
 
@@ -98,6 +129,10 @@
   padding-bottom: 3px;
 
   border-top: 1px solid #e1e1e1;
+  @include tablet {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 .rights-reserved__text {
   width: 135px;
@@ -108,4 +143,7 @@
   text-align: center;
 
   color: var(--second-text-color);
+  @include tablet {
+    width: auto;
+  }
 }
