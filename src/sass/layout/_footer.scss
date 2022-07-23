@@ -2,7 +2,8 @@
   background-color: var(--second-bg-color);
 }
 .footer__titel {
-  margin-right: 66px;
+  margin-bottom: 40px;
+  padding-right: 66px;
 }
 .footer__titel--small {
   margin-bottom: 16px;
@@ -29,6 +30,8 @@
   display: flex;
   justify-content: flex-end;
   gap: 28px;
+
+  margin-bottom: 40px;
 }
 .social-list__item {
   width: 32px;
@@ -45,4 +48,15 @@
   background-color: #fea5bb;
 
   fill: var(--white-color);
+}
+.call {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+
+  text-align: right;
+}
+
+.call__text {
+  color: var(--primary-text-color);
 }
