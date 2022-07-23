@@ -1,10 +1,11 @@
 .customer-reviews {
+  padding-bottom: 60px;
 
   &__box {
     position: relative;
     background-color: #FAFAFA;
     padding: 43px 50px 17px 50px;
-    height: 250px;
+    height: 308px;
   }
 
   &__text {
@@ -21,7 +22,7 @@
     margin-top: 16px;
     margin-bottom: 16px;
     font-size: 14px;
-    color: #000000;
+    color: var(--primary-text-color);
     text-align: center;
     line-height: 186%;
   }
@@ -35,12 +36,14 @@
   &__photo {
     margin: 0 auto 32px auto;
     display: block;
+    width: 85px;
   }
 
   &__image {
     position: absolute;
     top: 30px;
-    left: 53px;
+    left: 48px;
+    width:54px;
   }
 
   &__imageBackground {
@@ -49,6 +52,7 @@
     right: 0;
     margin: auto;
     top: 74px;
+    width: 180px;
   }
 
 
@@ -65,4 +69,10 @@
       margin-right: 18px;
   }
 
+  &__point-big {
+
+    &--current {
+      fill:#D31342;
+    }
+  }
 }
