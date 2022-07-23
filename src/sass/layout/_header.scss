@@ -1,0 +1,19 @@
+.page-header {
+  background-color: transparent;
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav {
+  padding-top: 8px;
+}
+
+.menu-open-btn {
+  display: block;
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
