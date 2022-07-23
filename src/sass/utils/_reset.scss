@@ -5,15 +5,32 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove markers / Убираем маркеры */
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  width: 100%; /* Recomanded */
+  max-width: 100%;
+  height: auto; /* Recomanded */
+}
+/* Recomanded / Репета рекомендовал */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Cursor pointer / Рука-указатель */
+button {
+  cursor: pointer;
 }

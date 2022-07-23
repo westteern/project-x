@@ -1,0 +1,226 @@
+.products {
+  //   background-color: aqua;
+  margin: 60px 0;
+}
+// .container {
+//   width: 100%;
+//   // min-width: 320px;
+//   margin: 0 auto;
+//   padding: 0 20px;
+//   @media screen and (min-width: 768px) {
+//     padding: 0 32px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     padding: 0 16px;
+//   }
+// }
+.products__label {
+  display: block;
+  font-family: 'Titan One';
+  //   font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+
+.products__title {
+  font-family: 'Titan One';
+  //   font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 8px;
+}
+
+.sweetlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   @media screen and (min-width: 768px) {
+  //     flex-direction: unset;
+  //     flex-wrap: wrap;
+  //     gap: 16px;
+  //   }
+  // gap: 32px;
+}
+.sweetlist__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 280px;
+  height: 629px;
+  //   background-color: #a6ffa5;
+  //   @media screen and (min-width: 768px) {
+  //     width: 224px;
+  //     height: 611px;
+  //   }
+}
+
+.sweetlist__title {
+  position: relative;
+  z-index: 5;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+.sweetlist__title-icecream::before {
+  display: block;
+  margin-bottom: 20px;
+  height: 280px;
+  content: '';
+  background-image: url(../images/icecream1Mob2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 320px) {
+    background-image: url(../images/icecream1Mob1.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/icecream1Mob2.png);
+    }
+  }
+  //   @media screen and (min-width: 768px) {
+  //     background-image: url(../images/icecream1Tab1.png);
+  //     @media (min-device-pixel-ratio: 2),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //       background-image: url(../images/icecream1Tab2.png);
+  //     }
+  //   }
+}
+.sweetlist__title-icecoffee::before {
+  display: block;
+  margin-bottom: 20px;
+  height: 280px;
+  content: '';
+  background-image: url(../images/icecoffee2Mob2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 320px) {
+    background-image: url(../images/icecoffee2Mob1.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/icecoffee2Mob2.png);
+    }
+  }
+  //   @media screen and (min-width: 768px) {
+  //     background-image: url(../images/icecoffee2Tab1.png);
+  //     @media (min-device-pixel-ratio: 2),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //       background-image: url(../images/icecoffee2Tab2.png);
+  //     }
+  //   }
+}
+.sweetlist__title-milkshakes::before {
+  display: block;
+  margin-bottom: 20px;
+  height: 280px;
+  content: '';
+  background-image: url(../images/milkshakes3Mob2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 320px) {
+    background-image: url(../images/milkshakes3Mob1.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/milkshakes3Mob2.png);
+    }
+  }
+  //   @media screen and (min-width: 768px) {
+  //     background-image: url(../images/milkshakes3Tab1.png);
+  //     @media (min-device-pixel-ratio: 2),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //       background-image: url(../images/milkshakes3Tab2.png);
+  //     }
+  //   }
+}
+.sweetlist__title::after {
+  display: block;
+  content: url(../images/Group4.svg);
+  fill: #ffffff;
+  padding-top: 17px;
+}
+
+.sweetlist__form {
+  width: 100%;
+}
+
+.sweetlist__box {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  z-index: 0;
+  width: 280px;
+  height: 489px;
+  border-radius: 24px;
+  //   @media screen and (min-width: 768px) {
+  //     width: 224px;
+  //     height: 473px;
+  //   }
+}
+.box--icecream {
+  background-color: #ffb8ca;
+}
+.box--icecoffee {
+  background-color: #f0d1a5;
+}
+.box--milkshakes {
+  background-color: #c2e297;
+}
+
+.sweetlist__text {
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+  width: 200px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  /* or 21px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.sweetlist-button {
+  display: block;
+  position: relative;
+  z-index: 5;
+  fill: #d41443;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
