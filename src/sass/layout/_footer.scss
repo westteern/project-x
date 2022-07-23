@@ -82,6 +82,13 @@
 .call__number {
   color: var(--title-color);
   text-decoration: none;
+
+  transition: color var(--prime-tansition-timing) var(--prime-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--second-text-color);
+  }
 }
 .rights-reserved {
   display: flex;
