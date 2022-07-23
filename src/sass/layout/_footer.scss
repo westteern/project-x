@@ -58,7 +58,15 @@
   border-radius: 50px;
   background-color: #fea5bb;
 
+  transition: background-color var(--prime-tansition-timing)
+    var(--prime-animation);
+
   fill: var(--white-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .call {
   font-weight: 700;
