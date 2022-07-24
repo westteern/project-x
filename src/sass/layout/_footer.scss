@@ -85,6 +85,7 @@
 
   margin-bottom: 40px;
   @include tablet {
+    gap: 30px;
     padding-top: 60px;
   }
   @include desktop {
@@ -124,7 +125,11 @@
 
   @include tablet {
     font-size: 14px;
-    line-height: 1.9;
+    line-height: 1.85;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.87;
   }
 }
 
@@ -159,7 +164,6 @@
   }
   @include desktop {
     max-width: 1200px;
-
     margin-left: auto;
     margin-right: auto;
     padding-top: 7px;
@@ -179,7 +183,9 @@
 
   @include tablet {
     width: auto;
-    line-height: 1.85;
+
+    font-size: 14px;
+    line-height: 1.86;
     letter-spacing: 0.02em;
   }
   @include desktop {
