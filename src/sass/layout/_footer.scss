@@ -14,6 +14,11 @@
     flex-direction: row;
     max-width: 768px;
   }
+  @include desktop {
+    align-items: flex-end;
+    max-width: 1200px;
+    padding: 60px 16px;
+  }
 }
 .footer__title {
   width: 234px;
@@ -25,6 +30,9 @@
     width: 340px;
     margin-bottom: 0;
     margin-right: auto;
+  }
+  @include desktop {
+    width: 477px;
   }
 }
 .footer__title--small {
@@ -40,8 +48,13 @@
   @include tablet {
     margin-bottom: 12px;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.15;
     letter-spacing: 0.04em;
+  }
+  @include desktop {
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 1.13;
   }
 }
 .footer__title--big {
@@ -58,6 +71,10 @@
     line-height: 1.15;
     letter-spacing: 0.06em;
   }
+  @include desktop {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 .footer__cotacts {
   padding-bottom: 40px;
@@ -69,7 +86,11 @@
 
   margin-bottom: 40px;
   @include tablet {
+    gap: 30px;
     padding-top: 60px;
+  }
+  @include desktop {
+    padding-top: 0;
   }
 }
 .social-list__item {
@@ -105,7 +126,11 @@
 
   @include tablet {
     font-size: 14px;
-    line-height: 1.9;
+    line-height: 1.85;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.87;
   }
 }
 
@@ -137,6 +162,13 @@
     padding-top: 8px;
     padding-bottom: 8px;
   }
+  @include desktop {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7px;
+    padding-bottom: 4px;
+  }
 }
 .rights-reserved__text {
   width: 135px;
@@ -149,5 +181,8 @@
   color: var(--second-text-color);
   @include tablet {
     width: auto;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
   }
 }
