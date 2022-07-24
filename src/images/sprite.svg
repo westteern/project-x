@@ -44,5 +44,8 @@
         <symbol id="icon-point-big" viewBox="0 0 35 32">
         <path fill="#d9d9d9" style="fill: var(--color3, #d9d9d9)" d="M33.053 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
         </symbol>
+        <symbol id="icon-arrow-forward" viewBox="0 0 32 32">
+            <path fill="#d41443" d="M7.812 5.5l2.875-2.812 13.312 13.312-13.312 13.312-2.875-2.812 10.563-10.5z"></path>
+        </symbol>
     </defs>
 </svg>
