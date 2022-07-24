@@ -7,6 +7,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  @include tablet {
+    gap: 22px;
+    flex-wrap: nowrap;
+  }
+  @include desktop {
+    gap: 80px;
+  }
 }
 .advantages-list-item {
   width: calc(100% - 40px);
@@ -18,17 +25,44 @@
     height: 50px;
     background-size: contain;
     background-repeat: no-repeat;
+    @include tablet {
+      margin-bottom: 36px;
+    }
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+  @include tablet {
+    width: 160px;
+  }
+  @include desktop {
+    width: calc((100% - 160px) / 3);
   }
 }
 
 .icon-milk::before {
-  background-image: url(../images/advantages-milk.png);
+  background-image: url(../images/advantages/advantages-milk.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantages-milk-x2.png);
+  }
 }
 .icon-bucket::before {
-  background-image: url(../images/advantages-bucket.png);
+  background-image: url(../images/advantages/advantages-bucket.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantages-bucket-x2.png);
+  }
 }
 .icon-heart::before {
-  background-image: url(../images/advantages-heart.png);
+  background-image: url(../images/advantages/advantages-heart.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/advantages/advantages-heart-x2.png);
+  }
 }
 
 .advantages-list-number {
@@ -41,9 +75,26 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--accent-color);
+  @include tablet {
+    margin-bottom: 22px;
+    font-size: 48px;
+  }
+  @include desktop {
+    margin-bottom: 25px;
+    font-size: 58px;
+  }
 }
 .advantages-list-text {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
 }
