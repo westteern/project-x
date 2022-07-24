@@ -1,14 +1,21 @@
 <article class="customer-reviews">
     <div class="container">
-        <img class="customer-reviews__photo" src="/src/images/review-person.png" alt="review person" />
+
+        <picture>
+            <source srcset="/src/images/review-person.png 1x, /src/images/review-person-2x.png 2x" />
+        <img class="customer-reviews__photo" src="/src/images/review-person.png" alt="review person" width="85"/>
+        </picture>
+
         <div class="customer-reviews__box">
-            <img class="customer-reviews__image" src="/src/images/review-quotes.png" alt="review person" width="54" height="40" />
             <img class="customer-reviews__imageBackground" src="/src/images/review-field.png" alt="review person" />
+            <img class="customer-reviews__imageBackgroundTable" src="/src/images/review-field-table.png" alt="review person" />
+            <img class="customer-reviews__imageBackgroundDesctop" src="/src/images/review-field-desctop.png" alt="review person" />
             <p class="customer-reviews__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risis. Aliquam
                 sem. In
                 hendreit nulla quam nunc, accumsan
                 congue. Lorem ipsum primis in nibh vel risus.
             </p>
+            <img class="customer-reviews__image" src="/src/images/review-quotes.png" alt="review person" width="54" height="40" />
         </div>
         <div class="customer-reviews__point">
             <svg class="customer-reviews__point-small" width="4" height="4">

@@ -4,18 +4,49 @@
   &__box {
     position: relative;
     background-color: #FAFAFA;
-    padding: 43px 50px 17px 50px;
+    padding-top: 47px;
+    padding-bottom: 39px;
     height: 308px;
+    margin:0 auto;
+
+  @media screen and (min-width:768px) {
+  height: 164px;
+  padding-top: 37px;
+  padding-bottom: 44px;
+  width: 620px;
+  }
+
+  @media screen and (min-width:1200px) {
+  height: 138px;
+  padding-top: 47px;
+  padding-bottom: 39px;
+  width: 968px;
+  }
   }
 
   &__text {
     font-weight: 500;
     font-size: 12px;
-    line-height: 255%;
+    line-height: 2.55;
     max-width: 130px;
     max-height: 239px;
     margin: 0 auto;
     text-align: center;
+
+    @media screen and (min-width:768px) {
+      max-width: 514px;
+      max-height: 83px;
+      font-size: 14px;
+      line-height: 2.16;
+    }
+
+    @media screen and (min-width:1200px) {
+      max-width: 750px;
+      max-height: 35px;
+      font-size: 16px;
+      line-height: 1.86;
+    }
+
   }
 
   &__adress {
@@ -24,7 +55,12 @@
     font-size: 14px;
     color: var(--primary-text-color);
     text-align: center;
-    line-height: 186%;
+    line-height: 1.86;
+
+    @media screen and (min-width:1200px) {
+        font-size: 20px;
+    }
+
   }
 
   &__point {
@@ -44,6 +80,19 @@
     top: 30px;
     left: 48px;
     width:54px;
+    z-index: 1;
+
+    @media screen and (min-width:768px) {
+        top: 20px;
+        left: 6px;
+        width: 60px;
+      }
+    @media screen and (min-width:1200px) {
+        top: 32px;
+        left: 72px;
+        width: 54px;
+    }
+
   }
 
   &__imageBackground {
@@ -53,8 +102,40 @@
     margin: auto;
     top: 74px;
     width: 180px;
+
+    @media screen and (min-width:768px){
+    display:none;
+    }
+
   }
 
+  &__imageBackgroundTable {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: none;
+      width: 608px;
+
+     @media screen and (min-width:768px) {
+      display: block;
+     }
+
+     @media screen and (min-width:1200px) {
+      display: none;
+     }
+  }
+
+    &__imageBackgroundDesctop {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 821px;
+    @media screen and (max-width:1199px) {
+        display: none;
+      }
+ }
 
   &__point-small:not(:last-child) {
       margin-right: 10px;
