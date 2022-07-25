@@ -200,6 +200,7 @@
   border: 0;
   cursor: pointer;
   border-radius: 22px;
+  transition: color var(--prime-tansition-timing) var(--prime-animation);
   .button-foodpoints__icon {
     // padding-top: 3px;
     width: 7px;
@@ -210,7 +211,6 @@
 .btn__locations {
   color: var(--white-color);
   background: #d41342;
-  transition: color var(--prime-tansition-timing) var(--prime-animation);
   @include tablet {
     width: 192px;
   }
@@ -227,7 +227,6 @@
 .btn__franchise {
   color: #d41342;
   background: var(--white-color);
-  transition: color var(--prime-tansition-timing) var(--prime-animation);
   @include tablet {
     width: 174px;
   }
