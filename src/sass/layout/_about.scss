@@ -18,6 +18,7 @@
 
 .title-about {
   font-family: 'Titan one', raleway;
+  font-weight: 400;
   font-size: 34px;
   line-height: calc(39 / 34);
   text-align: center;
@@ -54,27 +55,33 @@
 }
 
 .about-btn-more {
-  min-width: 176px;
+  width: 176px;
   height: 44px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  letter-spacing: 0.06em;
   color: var(--accent-color);
   background: var(--white-color);
   cursor: pointer;
   border-radius: 22px;
-  padding-top: 0;
-  padding-left: 37px;
-  padding-right: 37px;
+  padding: 0 37px;
   border: 1px solid transparent;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.button-text {
+  width: 83px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
 }
 
 .about-button-icon {
+  padding-top: 3px;
+  width: 7px;
+  height: 14px;
   fill: var(--accent-color);
 }
