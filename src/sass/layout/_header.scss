@@ -1,6 +1,18 @@
 .page-header {
-  //   position: absolute;
   background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding-top: 8px;
+  @include tablet {
+    max-width: 768px;
+    padding: 32px 0 0 0;
+  }
+  @include desktop {
+    max-width: 1200px;
+    padding: 32px 0 0 0;
+  }
+
   & .container {
     display: flex;
     align-items: center;
@@ -9,7 +21,11 @@
 
 .nav {
   display: flex;
-  padding-top: 8px;
+  align-items: center;
+  @include desktop {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .nav__menu {
@@ -19,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 128px;
+    width: 100%;
   }
 }
 
@@ -27,10 +43,16 @@
   margin-right: 35px;
 }
 .menu__link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   color: var(--white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+
   &_link.current {
     color: var(--accent-color);
   }
@@ -50,6 +72,11 @@
 }
 
 .button-buy {
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   display: none;
   @include tablet {
     max-width: 768px;
@@ -77,7 +104,6 @@
     justify-content: space-evenly;
     width: 160px;
     height: 44px;
-    margin-left: auto;
     color: var(--accent-color);
     background-color: var(--bg-color);
     border-radius: 22px;
