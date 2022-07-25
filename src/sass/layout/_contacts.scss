@@ -200,7 +200,9 @@
   border: 0;
   cursor: pointer;
   border-radius: 22px;
-  transition: color var(--prime-tansition-timing) var(--prime-animation);
+  transition: background-color var(--prime-tansition-timing)
+      var(--prime-animation),
+    color var(--prime-tansition-timing) var(--prime-animation);
   .button-foodpoints__icon {
     // padding-top: 3px;
     width: 7px;
