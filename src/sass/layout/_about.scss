@@ -5,6 +5,16 @@
   background: var(--second-bg-color);
 }
 
+.about-wrap {
+  @include tablet {
+    display: flex;
+    gap: 32px;
+  }
+  @include desktop {
+    gap: 99px;
+  }
+}
+
 .pre-title-about {
   font-family: 'Titan one', raleway;
   font-size: 18px;
@@ -13,18 +23,51 @@
   text-transform: uppercase;
   color: var(--pre-title-color);
   margin-bottom: 15px;
-  display: block;
+  @include tablet {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
 }
 
 .title-about {
   font-family: 'Titan one', raleway;
+  font-weight: 400;
   font-size: 34px;
   line-height: calc(39 / 34);
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--title-color);
   margin-bottom: 40px;
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
+  }
+}
+
+.img-wrap {
+  width: 280px;
+  height: 279px;
+  @include tablet {
+    width: 336px;
+    height: 335px;
+  }
+  @include desktop {
+    width: 501px;
+    height: 501px;
+  }
 }
 
 .about-after-title {
@@ -34,6 +77,19 @@
   width: 220px;
   margin-top: 40px;
   margin-bottom: 24px;
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    width: 334px;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    letter-spacing: 0.04em;
+    margin-top: 150px;
+    margin-bottom: 32px;
+    min-width: 463px;
+  }
 }
 
 .about-text {
@@ -43,38 +99,80 @@
   color: #907e82;
   width: 220px;
   margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    width: 334px;
+    margin-bottom: 10px;
+  }
+  @include desktop {
+    font-size: 14px;
+    line-height: calc(27 / 14);
+    letter-spacing: 0.04em;
+    min-width: 463px;
+    margin-bottom: 20px;
+  }
 }
 
 .bg-wrap {
-  width: 100%;
   background-image: url(../images/about/bg-milk.png);
+  background-size: 280px 133px;
+  background-position: center 597px;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  // @media screen and (min-width: 330px) {
+  //   background-size: contain;
+  // }
+  @include tablet {
+    background-image: none;
+  }
+  @include desktop {
+    background-image: url(../images/about/bg-milk-des.png);
+    background-repeat: no-repeat;
+    background-size: 100% 521px;
+    background-position: center 236px;
+  }
 }
 
 .about-btn-more {
-  min-width: 176px;
+  width: 176px;
   height: 44px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  letter-spacing: 0.06em;
   color: var(--accent-color);
   background: var(--white-color);
   cursor: pointer;
   border-radius: 22px;
-  padding-top: 0;
-  padding-left: 37px;
-  padding-right: 37px;
+  padding: 0 37px;
   border: 1px solid transparent;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 14px;
+  transition: color var(--prime-tansition-timing) var(--prime-animation);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    fill: var(--white-color);
+  }
+  @include tablet {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  @include desktop {
+    margin-bottom: 81px;
+  }
+}
+
+.button-text {
+  width: 83px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
 }
 
 .about-button-icon {
-  fill: var(--accent-color);
+  padding-top: 3px;
+  width: 7px;
+  height: 14px;
+  fill: currentColor;
 }
