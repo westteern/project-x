@@ -47,5 +47,8 @@
         <symbol id="icon-arrow-forward" viewBox="0 0 32 32">
             <path fill="#d41443" d="M7.812 5.5l2.875-2.812 13.312 13.312-13.312 13.312-2.875-2.812 10.563-10.5z"></path>
         </symbol>
+        <symbol id="close-icon" viewBox="0 0 32 32">
+            <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
+        </symbol>
     </defs>
 </svg>
