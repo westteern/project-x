@@ -9,7 +9,7 @@
 
   background-color: rgba(0, 0, 0, 0.2);
 }
-.header-backdrop.is-hidden {
+.header-backdrop.hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -39,7 +39,7 @@
   }
 }
 // -----------------------------
-.header-modal__button {
+.header-modal__button_close {
   position: absolute;
   top: 8px;
   right: 8px;
