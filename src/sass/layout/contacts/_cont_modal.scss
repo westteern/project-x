@@ -2,6 +2,8 @@
 .backdrop-contacts,
 .backdrop-locations {
   position: fixed;
+  padding-top: 20%;
+  padding-bottom: 20%;
   top: 0;
   left: 0;
   height: 100%;
@@ -24,16 +26,18 @@
 .backdrop-locations.is-hidden .modal-locations {
   transform: translate(-50%, -50%) scale(0) 250ms;
 }
-/* центрируем модалку */
+/* центрируем модалки */
 
 .modal-contacts,
 .modal-locations {
   position: absolute;
+
   top: 50%;
   left: 50%;
   width: 100%;
   max-width: 550px;
   height: 100%;
+  max-height: 750px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -41,7 +45,10 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--prime-animation);
   overflow-y: scroll;
+  border: 1px solid var(--title-color);
 }
+
+// modal- locations
 .modal-locations {
   max-width: 500px;
 }
@@ -51,6 +58,10 @@
   text-align: center;
 }
 .goole_map {
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  max-height: 450px;
   border-radius: 7;
   transition: transform 550ms ease;
   &:hover,
@@ -58,9 +69,10 @@
     transform: scale(1.2);
   }
 }
+// title locations
 .city__maps {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   color: var(--title-color);
   font-family: 'DM Sans';
   font-style: normal;
