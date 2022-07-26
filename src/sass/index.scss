@@ -1,10 +1,8 @@
-
 @import './base/vars';
 @import './utils/mixins';
 
 @import './base/normalize';
 @import './base/common';
-
 
 @import './utils/reset';
 @import './utils/hidden';
@@ -21,4 +19,5 @@
 @import './layout/customer-review';
 @import './layout/footer';
 @import './component/modal';
-@import './component/header-modal'
+@import './component/header-modal';
+@import './component/button-back';
