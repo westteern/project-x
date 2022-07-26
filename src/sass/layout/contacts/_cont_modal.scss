@@ -26,7 +26,7 @@
 .backdrop-locations.is-hidden .modal-locations {
   transform: translate(-50%, -50%) scale(0) 250ms;
 }
-/* центрируем модалку */
+/* центрируем модалки */
 
 .modal-contacts,
 .modal-locations {
@@ -47,6 +47,8 @@
   overflow-y: scroll;
   border: 1px solid var(--title-color);
 }
+
+// modal- locations
 .modal-locations {
   max-width: 500px;
 }
@@ -67,6 +69,7 @@
     transform: scale(1.2);
   }
 }
+// title locations
 .city__maps {
   margin-top: 20px;
   margin-bottom: 15px;
