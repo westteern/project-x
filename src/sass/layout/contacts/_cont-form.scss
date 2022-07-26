@@ -1,0 +1,151 @@
+/* modal form */
+.form-contacts {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  padding-top: 50px;
+  outline: none;
+}
+
+.form-contacts__field,
+.check-contacts {
+  position: relative;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-contacts__caption {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.form-contacts__label {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+}
+.form-contacts__label--bottom {
+  margin-bottom: 4px;
+  color: var(--title-color);
+}
+.form-contacts__input {
+  margin: 0;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 11px 15px 11px 42px;
+  font-size: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: #757575;
+  cursor: pointer;
+  transition: outline 250ms var(--prime-animation);
+  &:hover,
+  &:focus {
+    outline: 1px solid var(--accent-color);
+  }
+}
+
+.form-contacts__icon {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-90%);
+  fill: currentColor;
+  color: var(--accent-color);
+  cursor: pointer;
+  transition: color 250ms var(--prime-animation),
+    outline 250ms var(--prime-animation);
+  .form-contacts__input:hover + &,
+  .form-contacts__input:focus + & {
+    color: var(--accent-color);
+  }
+}
+
+.form-contacts__textarea {
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  height: 120px;
+  width: 100%;
+  font-size: inherit;
+  background: #ffffff;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: rgba(117, 117, 117, 0.5);
+  cursor: pointer;
+  transition: outline 250ms var(--prime-animation);
+  resize: none;
+  &:focus {
+    outline: 1px solid var(--accent-color);
+  }
+}
+/* checkBox */
+.check-contacts__label {
+  display: contents;
+  justify-content: center;
+}
+
+/* hidden classik checkbox */
+.check-contacts__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.check-contacts__icon {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-55%);
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+  transition: background-color 250ms var(--prime-animation),
+    border 250ms var(--prime-animation);
+  .check-contacts__input:not(checked) + & {
+    box-flex-group: #fff;
+    fill: #ffffff;
+  }
+  .check-contacts__input:checked + & {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    fill: #ffffff;
+  }
+}
+
+.check-contacts__text {
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #757575;
+  text-align: left;
+  &--agree {
+    color: var(--accent-color);
+  }
+  @include tablet {
+    // padding-left: 10px;
+    font-size: 12px;
+    line-height: 1.71;
+  }
+}
