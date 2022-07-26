@@ -1,0 +1,246 @@
+.section_foodpoints {
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-color) 23%,
+    var(--second-bg-color) 23%,
+    var(--second-bg-color) 85%
+  );
+  @include tablet {
+    background-image: linear-gradient(
+      to bottom,
+      var(--bg-color) 50%,
+      var(--second-bg-color) 50%,
+      var(--second-bg-color) 85%
+    );
+  }
+  @include desktop {
+    background-image: linear-gradient(
+      to bottom,
+      var(--bg-color) 20%,
+      var(--second-bg-color) 20%,
+      var(--second-bg-color) 85%
+    );
+  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* карточки точек питания */
+.card-contacts {
+  text-decoration: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22px / 12px);
+  @include tablet {
+    display: flex;
+    font-size: 14px;
+    line-height: calc(26px / 14px);
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(30px / 16px);
+  }
+}
+
+.card_item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 40px 32px;
+  width: 280px;
+  height: 412px;
+  background: var(--white-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  &:last-child {
+    margin-bottom: 32px;
+  }
+  &:nth-child(2) > .title__food {
+    width: 130px;
+    height: 16px;
+    background: var(--green-bg-color);
+    @include tablet {
+      width: 138px;
+      height: 28px;
+    }
+  }
+  @include tablet {
+    margin: 0;
+    margin-right: 32px;
+    margin-bottom: 60px;
+    width: 224px;
+    height: 528px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @include tablet {
+    width: 368px;
+    height: 538px;
+  }
+}
+.title__food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: var(--brown-bg-color);
+  border-radius: 4px;
+  @include tablet {
+    width: 73px;
+    height: 28px;
+  }
+}
+
+/* стилизация содержимого */
+.city,
+.work-week {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e1e1;
+  @include tablet {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
+}
+.city__title {
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+  @include tablet {
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    margin-bottom: 8px;
+  }
+}
+.city__text {
+  color: var(--second-text-color);
+}
+.work-days {
+  margin-bottom: 8px;
+  @include tablet {
+    margin-bottom: 12px;
+  }
+}
+.work__time {
+  color: #ffa5ba;
+}
+.mailphone {
+  line-height: calc(18px / 12px);
+  @include tablet {
+    line-height: calc(26px / 14px);
+  }
+  @include desktop {
+    line-height: calc(29px / 16px);
+  }
+}
+.card__mail,
+.card__phone {
+  color: #907e82;
+  text-decoration: none;
+  transition: color var(--prime-tansition-timing) var(--prime-animation);
+  &:hover,
+  &:focus {
+    color: var(--title-color);
+  }
+}
+
+/* BUTTONS */
+.btn-foodpoints {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.btn-foodpoints__item {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include tablet {
+    margin: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.button-foodpoints {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  width: 162px;
+  height: 44px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21px / 16px);
+  border: 0;
+  cursor: pointer;
+  border-radius: 22px;
+  transition: background-color var(--prime-tansition-timing)
+      var(--prime-animation),
+    color var(--prime-tansition-timing) var(--prime-animation);
+  .button-foodpoints__icon {
+    // padding-top: 3px;
+    width: 7px;
+    height: 14px;
+    fill: currentColor;
+  }
+}
+
+.btn__locations {
+  color: var(--white-color);
+  background: #d41342;
+  @include tablet {
+    width: 192px;
+  }
+  @include desktop {
+    width: 198px;
+  }
+  &:hover,
+  &:focus {
+    color: #d41342;
+    background: var(--white-color);
+    outline: none;
+  }
+}
+.btn__franchise {
+  color: #d41342;
+  background: var(--white-color);
+
+  @include tablet {
+    width: 174px;
+  }
+  @include desktop {
+    width: 168px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background: #d41342;
+    outline: none;
+  }
+}

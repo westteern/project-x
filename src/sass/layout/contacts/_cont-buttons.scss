@@ -94,7 +94,7 @@
   justify-content: center;
   position: fixed;
   top: 8px;
-  right: 8px;
+  right: 16px;
   width: 30px;
   height: 30px;
   color: var(--time-color);
@@ -108,7 +108,7 @@
     border: 1px solid var(--accent-color);
   }
 }
-.button-close__icon {
+.button-contacts-close__icon {
   height: 11px;
   width: 11px;
   fill: currentColor;
