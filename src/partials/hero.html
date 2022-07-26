@@ -2,7 +2,25 @@
         <div class="container">
             <div class="circle" width="346" height="344">
                 <div class="hero-image">
-                    <img src="./images/icecream-hero-mob.png" alt="ice cream" width="171"/>
+                    <picture>
+                        <source srcset="/src/images/hero/icecream-hero-desk.png 1x,
+                        /src/images/hero/icecream-hero-desk@2x.png 2x
+                        "
+                        media="(min-width:1200px)"
+                        />
+                        <source srcset="/src/images/hero/icecream-hero-tab.png 1x,
+                        /src/images/hero/icecream-hero-tab@2x.png 2x
+                        "
+                        media="(min-width:768px)"
+                        />
+                        <source srcset="/src/images/hero/icecream-hero-mob.png 1x,
+                        /src/images/hero/icecream-hero-mob@2x.png 2x
+                        "
+                        media="(min-width:320px)"
+                        />
+                        <img src="/src/images/hero/icecream-hero-mob.png" alt="ice cream" width="236"/>
+                    </picture>
+                        
                 </div>
             </div>
             <div class="content">
@@ -18,5 +36,84 @@
                     </li>
                 </ul>
             </div>
+            <div class="hero-milk">
+                <div class="hero-milk-img">
+                    <picture>
+                        <source srcset="/src/images/hero/hero-milk-desk@1x.png 1x,
+                        /src/images/hero/hero-milk-desk@2x.png 2x
+                        "
+                        media="(min-width:1200px)"
+                        />
+                        <source srcset="/src/images/hero/hero-milk-tab@1x.png 1x,
+                        /src/images/hero/hero-milk-tab@2x.png 2x
+                        "
+                        media="(min-width:768px)"
+                        />
+                    <img src="/src/images/hero/hero-milk-tab@1x.png" alt="milk bottle" width="213"/> 
+                    </picture>
+                </div>
+                <p class="hero-milk-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <button class="hero-button">
+            <picture>
+                <source srcset="/src/images/hero/arrow-tab@1x.png 1x,
+                /src/images/hero/arrow-tab@2x.png 2x"
+                media="(min-width:1200px)" />
+                <source srcset="/src/images/hero/arrow-desk@1x.png 1x,
+                /src/images/hero/arrow-desk@2x.png 2x"
+                media="(min-width:768px)" />
+                <img src="/src/images/hero/arrow-tab@1x.png" alt="arrow" width="26"/>
+            </picture>
+            </button>
+
+            </div>
+            <div class="hero-girl">
+                    <picture>
+                        <source srcset="/src/images/hero/hero-girl-desk@1x.png 1x,
+                            /src/images/hero/hero-girl-desk@2x.png 2x
+                            "
+                            media="(min-width:1200px)"
+                            />
+                            <source srcset="/src/images/hero/hero-girl-tab@1x.png 1x,
+                            /src/images/hero/hero-girl-tab@2x.png 2x
+                            "
+                            media="(min-width:768px)"
+                            />
+                        <img src="/src/images/hero/hero-girl-tab@1x.png" alt="girl" width="304"/>
+                    </picture>
+                    
+                </div>
+                <div class="hero-number-info">
+                    <div class="hero-cafe-img">
+                        <picture>
+                            <source srcset="/src/images/hero/hero-cafe-desk@1x.png 1x,
+                                /src/images/hero/hero-cafe-desk@2x.png 2x
+                                "
+                                media="(min-width:1200px)"
+                                />
+                                <source srcset="/src/images/hero/hero-cafe-tab@1x.png 1x,
+                                /src/images/hero/hero-cafe-tab@2x.png 2x
+                                "
+                                media="(min-width:768px)"
+                                />
+                            <img src="/src/images/hero/hero-cafe-tab@1x.png" alt="number of cafes"  width="72" height="77"/>
+                        </picture>
+                        
+                    </div>
+                    <div class="hero-trucks-img">
+                        <picture>
+                            <source srcset="/src/images/hero/hero-foodtrucks-desk@1x.png 1x,
+                                /src/images/hero/hero-foodtrucks-desk@2x.png 2x
+                                "
+                                media="(min-width:1200px)"
+                                />
+                                <source srcset="/src/images/hero/hero-foodtrucks-tab@1x.png 1x,
+                                /src/images/hero/hero-foodtrucks-tab@2x.png 2x
+                                "
+                                media="(min-width:768px)"
+                                />
+                            <img src="/src/images/hero/hero-foodtrucks-tab@1x.png" alt="number food trucks" width="92"/>
+                        </picture>
+                    </div>
+                </div>
         </div>
     </section>
