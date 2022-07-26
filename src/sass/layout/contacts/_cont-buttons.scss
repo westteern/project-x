@@ -1,0 +1,141 @@
+/* BUTTONS */
+
+.btn-foodpoints {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.btn-foodpoints__item {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include tablet {
+    margin: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.button-foodpoints {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  width: 162px;
+  height: 44px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21px / 16px);
+  border: 0;
+  cursor: pointer;
+  border-radius: 22px;
+  transition: background-color var(--prime-tansition-timing)
+      var(--prime-animation),
+    color var(--prime-tansition-timing) var(--prime-animation);
+  .button-foodpoints__icon {
+    width: 7px;
+    height: 14px;
+    fill: currentColor;
+  }
+}
+.btn__locations {
+  color: var(--white-color);
+  background: #d41342;
+  @include tablet {
+    width: 192px;
+  }
+  @include desktop {
+    width: 198px;
+  }
+  &:hover,
+  &:focus {
+    color: #d41342;
+    background: var(--white-color);
+    outline: none;
+  }
+}
+.btn__franchise {
+  color: #d41342;
+  background: var(--white-color);
+  @include tablet {
+    width: 174px;
+  }
+  @include desktop {
+    width: 168px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background: #d41342;
+    outline: none;
+  }
+}
+// buttos modal
+.button-contacts__close {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  top: 8px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  color: var(--time-color);
+  background-color: #ffffff;
+  border: 1px solid var(--time-color);
+  border-radius: 50%;
+  transition: color 250ms var(--prime-animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
+.button-contacts-close__icon {
+  height: 11px;
+  width: 11px;
+  fill: currentColor;
+}
+
+.button-foodpoints__form {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding: 10px 55px 10px 56px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.88;
+  background: #d41342;
+  border-radius: 22px;
+  border: 0;
+  outline: none;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: font-size 250ms var(--prime-animation);
+  &:hover,
+  &:focus {
+    font-size: 18px;
+  }
+}

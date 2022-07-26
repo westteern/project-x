@@ -23,6 +23,9 @@
   }
   padding-top: 60px;
   padding-bottom: 60px;
+  &.modal-open-contacts {
+    overflow: hidden;
+  }
 }
 /* карточки точек питания */
 .card-contacts {
@@ -153,94 +156,6 @@
     color: var(--title-color);
   }
 }
-
-/* BUTTONS */
-.btn-foodpoints {
-  @include tablet {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-.btn-foodpoints__item {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-  @include tablet {
-    margin: 0;
-    margin-bottom: 0;
-    margin-right: 15px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
-.button-foodpoints {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: auto;
-  margin-right: auto;
-  width: 162px;
-  height: 44px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(21px / 16px);
-  border: 0;
-  cursor: pointer;
-  border-radius: 22px;
-  transition: background-color var(--prime-tansition-timing)
-      var(--prime-animation),
-    color var(--prime-tansition-timing) var(--prime-animation);
-  .button-foodpoints__icon {
-    // padding-top: 3px;
-    width: 7px;
-    height: 14px;
-    fill: currentColor;
-  }
-}
-
-.btn__locations {
-  color: var(--white-color);
-  background: #d41342;
-  @include tablet {
-    width: 192px;
-  }
-  @include desktop {
-    width: 198px;
-  }
-  &:hover,
-  &:focus {
-    color: #d41342;
-    background: var(--white-color);
-    outline: none;
-  }
-}
-.btn__franchise {
-  color: #d41342;
-  background: var(--white-color);
-
-  @include tablet {
-    width: 174px;
-  }
-  @include desktop {
-    width: 168px;
-  }
-  &:hover,
-  &:focus {
-    color: var(--white-color);
-    background: #d41342;
-    outline: none;
-  }
-}
+@import './cont-buttons';
+@import './cont-form';
+@import './cont_modal';
