@@ -88,20 +88,19 @@
     <!-- BUTTONS -->
     <ul class="ul btn-foodpoints">
       <li class="btn-foodpoints__item">
-        <button
-          class="btn__locations button-foodpoints"
-          type="button"
-          href="https://www.google.com/maps/@40.780541,-97.8662114,5z"
-        >
+        <button class="btn__locations button-foodpoints" type="button">
           <div class="button-foodpoints__text">Our Locations</div>
-
           <svg widht="20" height="20" class="button-foodpoints__icon">
             <use href="./images/sprite.svg#icon-more"></use>
           </svg>
         </button>
       </li>
       <li class="btn-foodpoints__item">
-        <button class="btn__franchise button-foodpoints" type="button">
+        <button
+          class="btn__franchise button-foodpoints"
+          data-modal-contacts-open
+          type="button"
+        >
           <div class="button-foodpoints__text">Franchise</div>
           <svg widht="20" height="20" class="button-foodpoints__icon">
             <use href="./images/sprite.svg#icon-more"></use>
@@ -111,3 +110,72 @@
     </ul>
   </div>
 </section>
+
+<!-- MODAL -->
+<div class="backdrop-contacts is-hidden" data-modal-contacts>
+  <div class="modal-contacts">
+    <button class="button button-contacts__close" data-modal-contacts-close>
+      <svg class="button-close__icon">
+        <use href="./images/sprite.svg#icon-btn-close"></use>
+      </svg>
+    </button>
+    <!-- modal form -->
+    <form class="form-contacts">
+      <div class="form__field">
+        <b class="form__caption">Оставьте свои данные, мы вам перезвоним</b>
+        <label class="form__label--bottom" for="name">Имя</label>
+        <div class="form__label">
+          <input class="form__input" type="text" name="name" />
+          <svg class="form__icon">
+            <use href="./images/sprite.svg#icon-user"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form__field">
+        <label class="form__label--bottom" for="tel">Телефон</label>
+        <div class="form__label">
+          <input class="form__input" type="phone" name="phone" />
+          <svg class="form__icon">
+            <use href="./images/sprite.svg#icon-phone2"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form__field">
+        <label class="form__label--bottom" for="email">Почта</label>
+        <div class="form__label">
+          <input class="form__input" type="email" name="email" />
+          <svg class="form__icon">
+            <use href="./images/sprite.svg#icon-letter2"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="form__field">
+        <label class="form__label--bottom" for="comment"> Коментарий</label>
+        <textarea
+          class="form__textarea"
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="5"
+          placeholder="Введите текст"
+        ></textarea>
+      </div>
+      <div class="check-contacts">
+        <label class="check-contacts__label">
+          <input class="check-contacts__input" type="checkbox" name="" />
+          <svg class="check-contacts__icon">
+            <use href="./images/sprite.svg#icon-checkmark"></use>
+          </svg>
+          <span class="check-contacts__text">
+            Соглашаюсь с рассылкой и принимаю
+            <a href=" " class="check-contacts__text--agree">Условия договора</a>
+          </span>
+        </label>
+      </div>
+      <button class="button-foodpoints__form" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script src="./jscript/contacts-modal.js"></script>
