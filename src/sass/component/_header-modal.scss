@@ -8,12 +8,16 @@
   overflow: hidden;
 
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-backdrop.hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transform: scale(6);
 }
+
 .header-modal {
   position: absolute;
   top: 20%;
