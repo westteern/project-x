@@ -1,9 +1,6 @@
 
 .container-hero {
     padding: 0;
-    // @media screen and (min-width: 1200px){
-    //     max-width: 1600px;
-    // }
 }
 
 .circle {
@@ -33,6 +30,7 @@
     position: relative;
     overflow: hidden;
     height: 502px;
+    padding-left: 36px;
     @media screen and (min-width: 768px){
         padding-top: 43px;
         padding-left: 52px;
@@ -112,49 +110,57 @@
     
 }
 
-.product-btn {
+.product-btn-link {
     display: flex;
-    border-radius: 20px;
-    border: none;
-    width: 61.2px;
-    height: 24px;
     align-items: center;
     justify-content: center;
-    background: #D41443;
+    padding: 11px 23.63px;
+    border-radius: 20px;
+    width: 62.24px;
+    height: 24px;
+    background-color: #D41443;
+    font-family: DM Sans;
+    color: #ffffff;
+    font-size: 8px;
+    line-height: 1.25;
+    transition: transform 550ms ease;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:focus {
+        transform: scale(1.1);
+    }
     @media screen and (min-width: 1200px){
+        font-size: 14px;
+        line-height: 1.29;
         width: 107px;
         height: 40px;
         
     }
 }
 
-.product-btn-link {
+.made-btn-link {
     font-family: DM Sans;
-    color: #ffffff;
+    color: #D41443;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 8px;
     line-height: 1.25;
-    @media screen and (min-width: 1200px){
-        font-size: 14px;
-        line-height: 1.29;
-        
-    }
-}
-
-.made-btn {
-    font-family: DM Sans;
+    padding: 12px 10px;
     width: 82.8px;
     height: 24px;
-    font-size: 8px;
-    line-height: 1.25;
-    color: #D41443;
-    background: #FFFFFF;
     border-radius: 20px;
-    border: none;
+    background-color: #FFFFFF;
+    transition: background-color 550ms linear, transform 550ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
         background-color: #ECEBEB;
+        transform: scale(1.1);
     }
     &:focus {
         background-color: #ECEBEB;
+        transform: scale(1.1);
     }
     @media screen and (min-width: 1200px){
         width: 138px;
@@ -163,10 +169,6 @@
         line-height: 1.29;
         
     }
-}
-
-.made-btn-link {
-    color: #D41443;
 }
 
 .hero-item {
