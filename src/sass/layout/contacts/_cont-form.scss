@@ -1,4 +1,4 @@
-/* modal form */
+//modal form
 .form-contacts {
   margin-left: auto;
   margin-right: auto;
@@ -57,7 +57,6 @@
     outline: 1px solid var(--accent-color);
   }
 }
-
 .form-contacts__icon {
   padding: 0;
   position: absolute;
@@ -76,7 +75,6 @@
     color: var(--accent-color);
   }
 }
-
 .form-contacts__textarea {
   margin-bottom: 10px;
   padding: 12px 16px;
@@ -94,13 +92,13 @@
     outline: 1px solid var(--accent-color);
   }
 }
-/* checkBox */
+// checkBox
 .check-contacts__label {
   display: contents;
   justify-content: center;
 }
 
-/* hidden classik checkbox */
+//hidden classik checkbox
 .check-contacts__input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -144,8 +142,6 @@
     color: var(--accent-color);
   }
   @include tablet {
-    // padding-left: 10px;
-    // font-size: 12px;
     line-height: 1.71;
   }
 }
