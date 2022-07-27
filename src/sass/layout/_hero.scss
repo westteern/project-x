@@ -1,9 +1,9 @@
 
 .container-hero {
     padding: 0;
-    @media screen and (min-width: 1200px){
-        max-width: 1600px;
-    }
+    // @media screen and (min-width: 1200px){
+    //     max-width: 1600px;
+    // }
 }
 
 .circle {
@@ -27,11 +27,9 @@
     }
 }
 
-
-.hero {
+.hero-content {
     background-color: #FFB8CA;
     padding-top: 83px;
-    padding-left: 36px;
     position: relative;
     overflow: hidden;
     height: 502px;
@@ -48,6 +46,29 @@
         margin-right: auto;
         margin-left: auto;
     }
+}
+
+
+.hero {
+    background-color: #FFB8CA;
+    max-width: 100%;
+    // padding-top: 83px;
+    // position: relative;
+    // overflow: hidden;
+    // height: 502px;
+    // @media screen and (min-width: 768px){
+    //     padding-top: 43px;
+    //     padding-left: 52px;
+    //     height: 416px;
+    // }
+    // @media screen and (min-width: 1200px){
+    //     height: 664px;
+    //     padding-left: 16px;
+    //     padding-top: 54px;
+    //     max-width: 1200px;
+    //     margin-right: auto;
+    //     margin-left: auto;
+    // }
 }
 
 .hero-title {
