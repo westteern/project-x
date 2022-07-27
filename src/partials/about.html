@@ -1,40 +1,38 @@
-<section id="about" class="about bg-wrap">
+<section id="about about-mob" class="about bg-wrap">
   <div class="container">
     <p class="pre-title-about">tradition and love</p>
     <h2 class="title-about">how it’s made?</h2>
     <div class="about-wrap">
-      <div class="img-wrap">
-        <picture>
-          <source
-            srcset="
-              ./images/about/about1-1x-des.png 1x,
-              ./images/about/about1-2x-des.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./images/about/about1-1x-tab.png 1x,
-              ./images/about/about1-2x-tab.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./images/about/about1-1x-mob.png 1x,
-              ./images/about/about1-2x-mob.png 2x
-            "
-            media="(min-width: 320px)"
-          />
-          <img src="./images/about/about1-1x-mob.png" alt="" />
-        </picture>
-      </div>
-      <div class="text-wrap">
-        <h3 class="about-after-title">
+      <picture class="about-img-wrap">
+        <source
+          srcset="
+            ./images/about/about1-1x-des.png 1x,
+            ./images/about/about1-2x-des.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/about/about1-1x-tab.png 1x,
+            ./images/about/about1-2x-tab.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/about/about1-1x-mob.png 1x,
+            ./images/about/about1-2x-mob.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="./images/about/about1-1x-mob.png" alt="" />
+      </picture>
+      <div class="about-text-wrap">
+        <p class="about-after-title">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
           cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
           justo fringilla.
-        </h3>
+        </p>
         <p class="about-text">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
           Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
@@ -44,7 +42,7 @@
         <p class="is-hidden"></p>
         <p class="about-text">Aliquam erat volutpat. Aenean accumsan.</p>
         <button type="button" class="about-btn-more">
-          <span class="button-text">Read more</span>
+          <span class="about-button-text">Read more</span>
           <svg width="20" height="20" class="about-button-icon">
             <use href="./images/sprite.svg#icon-more"></use>
           </svg>
