@@ -3,7 +3,7 @@
 
   function trackScroll() {
     var scrolled = window.pageYOffset;
-    var coords = document.documentElement.clientHeight;
+    var coords = document.documentElement.clientHeight / 1.5;
 
     if (scrolled > coords) {
       goTopBtn.classList.add('button-back-show');
