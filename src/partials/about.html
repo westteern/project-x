@@ -40,13 +40,23 @@
           tincidunt.
         </p>
         <p class="is-hidden"></p>
-        <p class="about-text">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button type="button" class="about-btn-more">
-          <span class="about-button-text">Read more</span>
-          <svg width="20" height="20" class="about-button-icon">
+        <div class="input-wrap">
+          <input type="checkbox" class="read-more-state" id="more" />
+
+          <p class="about-text">
+            Aliquam erat volutpat. Aenean accumsan.
+            <span class="read-more-target"
+              >Libero fuga facilis vel consectetur quos sapiente deleniti
+              eveniet dolores tempore eos deserunt officia quis ab? Excepturi
+              vero tempore minus beatae voluptatem!</span
+            >
+          </p>
+
+          <label for="more" class="read-more-trigger"></label>
+          <svg class="input-icon" width="18" height="18">
             <use href="./images/sprite.svg#icon-more"></use>
           </svg>
-        </button>
+        </div>
       </div>
     </div>
   </div>
