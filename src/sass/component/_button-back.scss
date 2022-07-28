@@ -2,7 +2,7 @@
   display: none;
   position: fixed;
   bottom: 25px;
-  right: 25px;
+  right: 35px;
   padding: 1px;
   // border-radius: 10px;
   padding: 10px;
@@ -27,7 +27,7 @@
 
   @media screen and (min-width: 768px) {
     bottom: 30px;
-    right: 25px;
+    right: 45px;
     // font-size: 18px;
     // padding: 13px;
   }
@@ -41,9 +41,9 @@
   // rgba(212, 20, 68, 0.973));
   // color: #fff;
 }
-.button-back-show {
-  display: block;
-}
+// .button-back-show {
+//   display: block;
+// }
 .arrow,
 .arrow-second,
 .arrow-third {
