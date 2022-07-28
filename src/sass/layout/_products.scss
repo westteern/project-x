@@ -83,6 +83,7 @@
 .sweetlist__title {
   position: relative;
   z-index: 5;
+  width: 280px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 20px;
@@ -95,7 +96,11 @@
 
   color: #ffffff;
   margin-bottom: 29px;
+  @media screen and (min-width: 768px) {
+    width: 224px;
+  }
   @media screen and (min-width: 1200px) {
+    width: 368px;
     font-size: 30px;
     line-height: calc(34 / 30);
   }
@@ -228,10 +233,6 @@
   content: url(../images/products/group-circles.svg);
   // fill: #ffffff;
   padding-top: 18px;
-}
-
-.sweetlist__form {
-  width: 100%;
 }
 
 .sweetlist__box {
