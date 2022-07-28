@@ -60,15 +60,7 @@
   &:last-child {
     margin-bottom: 32px;
   }
-  &:nth-child(2) > .title__food {
-    width: 130px;
-    height: 16px;
-    background: var(--green-bg-color);
-    @include tablet {
-      width: 138px;
-      height: 28px;
-    }
-  }
+
   @include tablet {
     margin: 0;
     margin-right: 32px;
@@ -84,12 +76,14 @@
     height: 538px;
   }
 }
-.title__food {
+//стилизация содержимого
+.food-point {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 0;
+  padding: 0;
   margin-bottom: 20px;
   width: 80px;
   height: 16px;
@@ -103,19 +97,27 @@
     width: 73px;
     height: 28px;
   }
+  .card_item:nth-child(2) & {
+    width: 130px;
+    background: var(--green-bg-color);
+    @include tablet {
+      width: 138px;
+      height: 28px;
+    }
+  }
 }
-
-//стилизация содержимого
 .city,
 .work-week {
-  margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e1e1e1;
   @include tablet {
-    margin-bottom: 32px;
     padding-bottom: 32px;
   }
 }
+.work-week {
+  padding-top: 20px;
+}
+
 .city__title {
   margin-bottom: 8px;
   letter-spacing: 0.04em;
@@ -139,6 +141,7 @@
   color: #ffa5ba;
 }
 .mailphone {
+  padding-top: 20px;
   line-height: calc(18px / 12px);
   @include tablet {
     line-height: calc(26px / 14px);
