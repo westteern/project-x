@@ -12,24 +12,23 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 450ms var(--prime-animation);
+  -webkit-transition: opacity 450ms var(--prime-animation),
+    visibility 450ms var(--prime-animation);
+  transition: opacity 450ms var(--prime-animation),
+    visibility 450ms var(--prime-animation);
   z-index: 999;
-}
-
-.backdrop-contacts.is-hidden,
-.backdrop-locations.is-hidden {
-  display: none;
-  opacity: 0;
-  visibility: collapse;
-  pointer-events: none;
-}
-
-.backdrop-contacts.is-hidden .modal-contacts,
-.backdrop-locations.is-hidden .modal-locations {
-  transform: translate(-50%, -50%) scale(0) 250ms;
+  &.is-hidden {
+    display: none;
+    opacity: 0;
+    visibility: collapse;
+    pointer-events: none;
+  }
+  // &.is-hidden .modal-contacts,
+  // &.is-hidden .modal-locations {
+  //   transform: translate(-50%, -50%) scale(0) 250ms;
+  // }
 }
 /* центрируем модалки */
-
 .modal-contacts,
 .modal-locations {
   position: absolute;
@@ -46,10 +45,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 18px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--prime-animation);
   overflow-y: scroll;
-  border: 1px solid var(--title-color);
+  border: 2px solid var(--title-color);
   overflow-x: hidden;
+  transition: transform 250ms var(--prime-animation),
+    border 250ms var(--prime-animation);
 }
 
 // modal- locations
